@@ -60,8 +60,8 @@ nav h1 {
 nav .nav__links {
     display: flex;
 }
-  
-.nav__links li  {
+
+.nav__links li {
     padding: 10px 30px;
 }
 
@@ -118,10 +118,9 @@ nav .nav__links {
 
 .card__section:hover {
     color: #ffffff;
-    background-image: repeating-linear-gradient(
-        90deg,
-        hsl(var(--gradient-hue) var(--gradient-saturation) var(--gradient-lightness-start)) 0%,
-        hsl(var(--gradient-hue) var(--gradient-saturation) var(--gradient-lightness-end)) 100%);
+    background-image: repeating-linear-gradient(90deg,
+            hsl(var(--gradient-hue) var(--gradient-saturation) var(--gradient-lightness-start)) 0%,
+            hsl(var(--gradient-hue) var(--gradient-saturation) var(--gradient-lightness-end)) 100%);
     transform: scale(1.1);
 }
 
@@ -129,8 +128,8 @@ nav .nav__links {
     border: 1px solid #ffffff;
 }
 
-.card__section:hover  .card__section__features,
-.card__section:hover .card__section__features * + * {
+.card__section:hover .card__section__features,
+.card__section:hover .card__section__features *+* {
     border-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -152,16 +151,18 @@ h2 {
 }
 
 .card__section__features {
-    margin-block: 0.5em; /* La propriété margin-block définit la marge sur les côtés de l'élément qui sont ceux de l'axe de bloc. */
+    margin-block: 0.5em;
+    /* La propriété margin-block définit la marge sur les côtés de l'élément qui sont ceux de l'axe de bloc. */
     border-top: 1px solid rgba(179, 181, 198, 0.502);
     border-bottom: 1px solid rgba(179, 181, 198, 0.5);
 }
 
 .card__section__features * {
-    padding-block: 1em; /* La propriété padding-block définit l'espace de remplissage (padding) pour le début et la fin de l'axe de bloc de l'élément. */
+    padding-block: 1em;
+    /* La propriété padding-block définit l'espace de remplissage (padding) pour le début et la fin de l'axe de bloc de l'élément. */
 }
 
-.card__section__features * + * {
+.card__section__features *+* {
     border-top: 1px solid rgba(179, 181, 198, 0.5);
 }
 
@@ -185,11 +186,9 @@ h2 {
 }
 
 .bg-color {
-    background-image: repeating-linear-gradient(
-    90deg,
-    hsl(var(--gradient-hue) var(--gradient-saturation) var(--gradient-lightness-start)) 0%,
-    hsl(var(--gradient-hue) var(--gradient-saturation) var(--gradient-lightness-end)) 100%
-);
+    background-image: repeating-linear-gradient(90deg,
+            hsl(var(--gradient-hue) var(--gradient-saturation) var(--gradient-lightness-start)) 0%,
+            hsl(var(--gradient-hue) var(--gradient-saturation) var(--gradient-lightness-end)) 100%);
 }
 
 footer {
@@ -208,16 +207,12 @@ footer span {
 
 /**** Responsive design ****/
 
-@media  screen and (max-width: 530px) {
-    body {
-        overflow-x: hidden;
-    }
-
+@media screen and (max-width: 767px) {
     nav h1 {
         font-size: 0.9rem;
     }
 
-    .nav__links li  {
+    .nav__links li {
         padding: 10px 5px;
         font-size: 0.9rem;
     }
@@ -228,5 +223,9 @@ footer span {
 
     .card__section:hover {
         transform: scale(1.03)
+    }
+
+    .card__section {
+        width: 100%;
     }
 }
