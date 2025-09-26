@@ -1,4 +1,6 @@
-## Interactive pricing component
+## FRONTEND MENTOR | Interactive pricing component
+
+![Design preview for the project](./img/preview.png)
 
 ## The challenge
 
@@ -10,6 +12,10 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Update prices per click on links
 
+## Demo
+
+Link : https://aperbet56.github.io/pricing_component_page/
+
 ## Built with
 
 - Semantic HTML5 markup
@@ -19,3 +25,4 @@ Users should be able to:
 - Flexbox
 - JavaScript
 - Page responsive
+- Desktop first
